@@ -1,0 +1,339 @@
+.nav-bar {
+    position: relative;
+    transform: none;
+    left: 0;
+    margin: 5px auto;
+    background-color: rgba(22, 22, 22, 0.95);
+}
+
+.account-page-wrapper {
+    min-height: 80vh;
+    padding: 40px 0 80px 0;
+    color: var(--text);
+}
+
+.account-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.account-grid {
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.profile-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 35px 30px;
+    align-self: start;
+    text-align: center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    border-color: rgba(230, 179, 60, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.profile-avatar-large {
+    width: 90px;
+    height: 90px;
+    background: rgba(230, 179, 60, 0.05);
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    color: var(--gold);
+}
+
+.profile-avatar-large span {
+    font-size: 60px;
+}
+
+.profile-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.profile-card .role-badge {
+    display: inline-block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background: rgba(230, 179, 60, 0.15);
+    color: var(--gold);
+    padding: 4px 10px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.profile-details {
+    text-align: left;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+}
+
+.profile-detail-item {
+    margin-bottom: 15px;
+}
+
+.profile-detail-item label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 3px;
+    letter-spacing: 0.5px;
+}
+
+.profile-detail-item p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.dashboard-main-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.reservations-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 35px 30px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reservations-card:hover {
+    border-color: rgba(230, 179, 60, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.reservations-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 15px;
+}
+
+.reservations-card h2 span {
+    color: var(--gold);
+}
+
+.reservations-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+}
+
+.reservations-table th {
+    color: var(--gold);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 15px 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.reservations-table td {
+    padding: 16px 10px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+.reservations-table tr:last-child td {
+    border-bottom: none;
+}
+
+.reservations-table th:nth-child(1),
+.reservations-table td:nth-child(1) {
+    width: 70px;
+}
+
+.reservations-table th:nth-child(3),
+.reservations-table td:nth-child(3) {
+    width: 150px;
+}
+
+.reservations-table th:nth-child(4),
+.reservations-table td:nth-child(4) {
+    width: 130px;
+}
+
+.reservations-table th:nth-child(5),
+.reservations-table td:nth-child(5) {
+    width: 140px;
+}
+
+.reservations-table th:nth-child(6),
+.reservations-table td:nth-child(6) {
+    width: 130px;
+}
+
+.cell-car-brand {
+    font-weight: 600;
+    color: #fff;
+}
+
+.cell-car-model {
+    color: var(--text-dim);
+    font-size: 12px;
+}
+
+.cell-pakiet {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.cell-pakiet-podstawowy {
+    color: var(--text-dim);
+}
+
+.cell-pakiet-premium {
+    color: #3498db;
+}
+
+.cell-pakiet-vip {
+    color: var(--gold);
+}
+
+.cell-date-start {
+    color: #eee;
+}
+
+.cell-date-end {
+    color: var(--text-dim);
+}
+
+.cell-price {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+.badge-status {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.status-oczekuje {
+    background-color: rgba(230, 179, 60, 0.12);
+    color: var(--gold);
+    border: 1px solid rgba(230, 179, 60, 0.2);
+}
+
+.status-zatwierdzone {
+    background-color: rgba(39, 174, 96, 0.12);
+    color: var(--success);
+    border: 1px solid rgba(39, 174, 96, 0.2);
+}
+
+.status-zakonczone {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-dim);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.status-anulowane {
+    background-color: rgba(192, 57, 43, 0.12);
+    color: #ff6b6b;
+    border: 1px solid rgba(192, 57, 43, 0.2);
+}
+
+.empty-booking-msg {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--text-dim);
+}
+
+.empty-booking-msg span {
+    font-size: 50px;
+    color: var(--gold);
+    margin-bottom: 15px;
+    display: block;
+    opacity: 0.8;
+}
+
+.empty-booking-msg p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.book-now-btn {
+    background: var(--gold);
+    color: var(--bg-card);
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+
+}
+
+.book-now-btn:hover {
+    background-color: var(--gold-hover);
+}
+
+.alert-success-banner {
+    background: rgba(46, 204, 113, 0.1);
+    border: 1px solid var(--success);
+    color: var(--success);
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.alert-success-banner span {
+    font-size: 20px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+}
+
+.account-page-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.account-page-title .accent {
+    color: var(--gold);
+}
+
+.account-page-subtitle {
+    color: var(--text-dim);
+    margin-bottom: 30px;
+}
+
+@media (max-width: 950px) {
+    .account-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,212 @@
+.nav-bar {
+    position: relative;
+    transform: none;
+    left: 0;
+    margin: 5px auto;
+    background-color: rgba(22, 22, 22, 0.95);
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-section-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-section-title span {
+    color: var(--gold);
+}
+
+.about-section-subtitle {
+    font-size: 16px;
+    color: var(--text-dim);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-intro {
+    padding: 100px 5% 80px 5%;
+    border-bottom: 1px solid var(--border);
+}
+
+.about-intro-text {
+    color: var(--text);
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.about-stat {
+    text-align: center;
+    padding: 25px 20px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-stat:hover {
+    border-color: rgba(230, 179, 60, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.about-stat-number {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.about-stat-label {
+    color: var(--text-dim);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-regulamin {
+    padding: 100px 5%;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+}
+
+.regulamin-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: regulamin;
+}
+
+.regulamin-list li {
+    counter-increment: regulamin;
+    background-color: var(--bg-dark);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 25px 20px 75px;
+    margin-bottom: 15px;
+    position: relative;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+    transition: border-color 0.2s ease;
+}
+
+.regulamin-list li:hover {
+    border-color: rgba(230, 179, 60, 0.3);
+}
+
+.regulamin-list li::before {
+    content: counter(regulamin);
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    background: rgba(230, 179, 60, 0.15);
+    color: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.regulamin-list strong {
+    color: var(--gold);
+    display: block;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.about-faq {
+    padding: 100px 5%;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(230, 179, 60, 0.25);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+
+.faq-question:hover {
+    color: var(--gold);
+}
+
+.faq-question .material-symbols-outlined {
+    font-size: 24px;
+    color: var(--gold);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question .material-symbols-outlined {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 25px 22px 25px;
+    color: var(--text-dim);
+    font-size: 15px;
+    line-height: 1.7;
+    border-top: 1px solid var(--border);
+}
+
+.faq-answer p {
+    margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+    .about-section-title {
+        font-size: 28px;
+    }
+    .about-intro,
+    .about-regulamin,
+    .about-faq {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .regulamin-list li {
+        padding-left: 65px;
+    }
+}

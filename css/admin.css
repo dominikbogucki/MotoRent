@@ -1,0 +1,352 @@
+.nav-bar {
+    position: relative;
+    transform: none;
+    left: 0;
+    margin: 5px auto;
+    background-color: rgba(22, 22, 22, 0.95);
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: var(--text);
+}
+
+.admin-page-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.admin-page-title .accent {
+    color: var(--gold);
+}
+
+.admin-page-subtitle {
+    color: var(--text-dim);
+    margin-bottom: 30px;
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 30px;
+}
+
+.admin-menu {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    height: max-content;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-menu:hover {
+    border-color: rgba(230, 179, 60, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.admin-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    color: var(--text-dim);
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.admin-menu a:hover,
+.admin-menu a.active {
+    color: var(--gold);
+    background: rgba(230, 179, 60, 0.1);
+}
+
+.admin-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 30px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-card:hover {
+    border-color: rgba(230, 179, 60, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+    border-color: rgba(230, 179, 60, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.stat-box.highlight {
+    border-color: rgba(230, 179, 60, 0.3);
+}
+
+.stat-box h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.stat-box p {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gold);
+    margin: 0;
+}
+
+.stat-box.highlight p {
+    color: #ffb43c;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.admin-table th {
+    color: var(--gold);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.admin-reservations-table th:nth-child(5),
+.admin-reservations-table td:nth-child(5) {
+    white-space: nowrap;
+    min-width: 100px;
+}
+
+.admin-reservations-table th:nth-child(7),
+.admin-reservations-table td:nth-child(7) {
+    width: 170px;
+    min-width: 170px;
+    white-space: nowrap;
+}
+
+.alert-success {
+    background: rgba(46, 204, 113, 0.1);
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.alert-danger {
+    background: rgba(231, 76, 60, 0.1);
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btn-delete {
+    color: #ff6b6b;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.btn-edit {
+    color: var(--gold);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.admin-input,
+.admin-select {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: #161616;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-input:focus,
+.admin-select:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 10px rgba(230, 179, 60, 0.15);
+}
+
+.admin-view-header {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.admin-view-header h2 {
+    margin: 0;
+    color: var(--gold);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.admin-search-input {
+    padding: 10px 15px;
+    width: 280px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.25s;
+}
+
+.admin-search-input:focus {
+    border-color: var(--gold);
+}
+
+.admin-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.admin-form-grid label.highlight {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.admin-section-title {
+    margin-bottom: 20px;
+    color: var(--gold);
+}
+
+.admin-thumb {
+    height: 30px;
+    max-width: 60px;
+    object-fit: contain;
+}
+
+.status-free {
+    color: #2ecc71;
+}
+
+.status-busy {
+    color: #e74c3c;
+}
+
+.res-status-zatwierdzone {
+    color: #2ecc71;
+}
+
+.res-status-anulowane {
+    color: #e74c3c;
+}
+
+.res-status-zakonczone {
+    color: var(--text-dim);
+}
+
+.res-status-oczekuje {
+    color: var(--gold);
+}
+
+.res-status {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.res-cost {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+.client-meta {
+    color: var(--text-dim);
+    font-size: 12px;
+}
+
+.client-deleted-tag {
+    font-size: 10px;
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pakiet-label {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.pakiet-podstawowy {
+    color: var(--text-dim);
+}
+
+.pakiet-premium {
+    color: #3498db;
+}
+
+.pakiet-vip {
+    color: var(--gold);
+}
+
+.date-light {
+    color: #eee;
+}
+
+.date-dim {
+    color: var(--text-dim);
+}
+
+.role-admin {
+    color: var(--gold);
+    font-weight: bold;
+}
